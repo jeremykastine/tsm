@@ -8,4 +8,4 @@ Lecture notes and planning documents for the co-listed TSM 098–099 course.
 - `planning/` contains the co-listed course schedule.
 - `specifications/` contains the lecture-note and test specifications.
 
-The HTML conversion preserves 200 ten-line work areas from the Word sources. Mathematical notation is rendered with MathJax when the pages are viewed online.
+The HTML conversion includes 200 click-to-reveal worked solutions. Each hidden solution preserves its natural height, providing a work area sized to the amount of solution content. Mathematical notation is rendered with MathJax when the pages are viewed online.

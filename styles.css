@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  max-width: 900px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 40px 24px 72px;
 }
@@ -53,16 +53,60 @@ a { color: #175f9e; }
   font-size: 0.9rem;
 }
 
-.work-space {
-  width: 100%;
+.worked-example {
+  max-width: 850px;
   margin: 0;
 }
 
-.blank-line { height: 1.6em; }
+.solution-toggle {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+.solution-content {
+  visibility: hidden;
+}
+
+.solution-toggle.solution-visible .solution-content {
+  visibility: visible;
+}
+
+.solution-prompt {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 18px);
+  width: 155px;
+  color: #52606d;
+  font-size: 0.9rem;
+  line-height: 1.35;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.solution-toggle:focus-visible {
+  outline: 2px solid #175f9e;
+  outline-offset: 5px;
+}
+
+.solution-toggle:hover .solution-prompt,
+.solution-toggle:focus-visible .solution-prompt {
+  color: #175f9e;
+}
 
 .math.display { overflow-x: auto; }
 
 @media (max-width: 600px) {
   body { font-size: 16px; }
   main { padding: 28px 18px 56px; }
+}
+
+@media (max-width: 1080px) {
+  .solution-prompt {
+    position: static;
+    display: block;
+    width: auto;
+    margin: 0 0 8px;
+    text-align: right;
+  }
 }

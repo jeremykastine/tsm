@@ -173,10 +173,16 @@ Before delivery, confirm:
 
 The Word files remain the editable source documents. The browser edition is generated from those sources and follows these additional requirements:
 
+The interactive rules below replace the fixed ten-blank-line rule for the HTML edition only. Section 6 continues to govern the editable Word source documents.
+
 - Publish one HTML file for each topic, numbered Topic 1 through Topic 37.
 - Place a simple `index.html` at the repository root and group all topic links by unit as a table of contents.
 - Do not imitate Word pages or insert page breaks in the HTML edition. Let each topic flow continuously in the browser.
-- Preserve every problem's work area as exactly ten ordinary blank body-text lines between the complete problem statement and its worked solution.
+- Place each worked solution directly beneath its complete problem statement inside a clickable solution area.
+- Hide the solution initially while preserving its full natural height, so the blank work area is exactly as tall as that particular solution.
+- Clicking anywhere in the solution area must toggle between showing and hiding the solution. Keyboard users must be able to toggle it with Enter or Space.
+- Place the instruction `Click to show solution` in the right margin beside the blank work area, not inside it. When the solution is visible, change the instruction to `Click to hide solution`.
+- Keep the prompt outside the blank solution area so instructor screenshots can contain only the problem and unobstructed work space.
 - Preserve topic titles, **Assigned to** lines, overviews, key definitions, mathematical notation, instructional order, and worked explanations.
 - Keep the HTML design simple, readable, responsive, and suitable for GitHub Pages.
 - Keep the five original Word files, the co-listed schedule, and both specification files in the repository with the HTML edition.
