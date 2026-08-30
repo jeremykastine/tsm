@@ -178,11 +178,12 @@ The interactive rules below replace the fixed ten-blank-line rule for the HTML e
 - Publish one HTML file for each topic, numbered Topic 1 through Topic 37.
 - Place a simple `index.html` at the repository root and group all topic links by unit as a table of contents.
 - Do not imitate Word pages or insert page breaks in the HTML edition. Let each topic flow continuously in the browser.
-- Place each worked solution directly beneath its complete problem statement inside a clickable solution area.
-- Hide the solution initially while preserving its full natural height, so the blank work area is exactly as tall as that particular solution.
-- Clicking anywhere in the solution area must toggle between showing and hiding the solution. Keyboard users must be able to toggle it with Enter or Space.
-- Place the instruction `Click to show solution` in the right margin beside the blank work area, not inside it. When the solution is visible, change the instruction to `Click to hide solution`.
-- Keep the prompt outside the blank solution area so instructor screenshots can contain only the problem and unobstructed work space.
+- Place each worked solution directly beneath its complete problem statement in the document flow.
+- Hide the solution initially with a method such as `visibility: hidden` that preserves the solution's full natural height. Do not use `display: none`, remove the content from layout, or replace it with a fixed-height gap.
+- Put a real `Click to show solution` button in the right margin beside the problem statement. The button must remain outside both the problem/snipping column and the blank solution area.
+- Clicking the button must reveal the solution in its reserved space without moving later content. Change the button to `Click to hide solution`; clicking it again must restore the blank area.
+- Include the initial hidden state directly in the solution panel's HTML and reinforce it in JavaScript, so a stale or delayed stylesheet cannot expose solutions.
+- Keep the entire problem and naturally sized blank solution region unobstructed for instructor screenshots.
 - Preserve topic titles, **Assigned to** lines, overviews, key definitions, mathematical notation, instructional order, and worked explanations.
 - Keep the HTML design simple, readable, responsive, and suitable for GitHub Pages.
 - Keep the five original Word files, the co-listed schedule, and both specification files in the repository with the HTML edition.
