@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Topic 1: Multiplication Tables and Divisibility Properties | TSM Lecture Notes</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script>
+    window.MathJax = {
+      tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']]},
+      options: {skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']}
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <main>
+    <nav class="topic-nav" aria-label="Lesson navigation">
+      <a href="../index.html">Table of contents</a>
+        <a href="topic-02-prime-factorization.html">Next topic</a>
+    </nav>
+    <p class="series-title">TSM Lecture Notes · Unit 1</p>
+<h1 id="topic-1-multiplication-tables-and-divisibility-properties">Topic
+1: Multiplication Tables and Divisibility Properties</h1>
+<p><strong>Assigned to:</strong> TSM 098 and TSM 099</p>
+<h2 id="overview">Overview</h2>
+<p>This topic builds multiplication-table fluency and uses divisibility
+properties to decide efficiently whether one whole number divides
+another without a remainder.</p>
+<h2 id="key-definitions">Key definitions</h2>
+<p>Divisible: a division has remainder 0. Factor: a whole number that
+divides another whole number evenly. Divisibility property: a shortcut
+for deciding divisibility from a number's digits.</p>
+<p>Consider the following number.</p>
+<p><span class="math display">\[24\]</span></p>
+<div class="work-space" role="img" aria-label="Ten blank lines for working"><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div></div>
+<p>Twenty-four is divisible by two because it can be written as <span
+class="math inline">\(2\  \cdot \ 12\)</span>. That is, twenty-four
+contains exactly twelve groups of two, with nothing left over.</p>
+<p>Now consider another number.</p>
+<p><span class="math display">\[25\]</span></p>
+<div class="work-space" role="img" aria-label="Ten blank lines for working"><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div></div>
+<p>Twenty-five is not divisible by two. Twelve groups of two account for
+twenty-four, leaving one extra. In other words, dividing twenty-five by
+two would produce a remainder of one.</p>
+<p>Divisibility is a yes-or-no question about a whole number. When we
+ask whether a number is divisible by another number, we are asking
+whether it can be separated into equal groups with nothing left over. If
+nothing is left over, the answer is yes. If there is a remainder, the
+answer is no.</p>
+<p>A divisibility property lets us answer that question without actually
+carrying out the division. Some properties depend only on the final
+digit. Others depend on the sum of the digits. These properties tell us
+whether division would come out evenly; they do not require us to find
+the quotient.</p>
+<p>Determine whether the following number is divisible by two.</p>
+<p><span class="math display">\[233,557\]</span></p>
+<div class="work-space" role="img" aria-label="Ten blank lines for working"><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div></div>
+<p>A whole number is divisible by two when its final digit is even. The
+even digits are 0, 2, 4, 6, and 8. We do not need to inspect the other
+digits, and we do not need to perform the division. The final digit
+settles the question.</p>
+<p>The final digit is seven. Seven is odd, so the number is not
+divisible by two.</p>
+<p>Determine whether the following number is divisible by five.</p>
+<p><span class="math display">\[418,980\]</span></p>
+<div class="work-space" role="img" aria-label="Ten blank lines for working"><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div></div>
+<p>A whole number is divisible by five when its final digit is either
+zero or five. Again, the entire decision comes from the final digit.</p>
+<p>The final digit is zero, so the number is divisible by five. The fact
+that the number also happens to be divisible by other numbers is not
+needed here; the question only asks about divisibility by five.</p>
+<p>Determine whether the following number is divisible by ten.</p>
+<p><span class="math display">\[665,926\]</span></p>
+<div class="work-space" role="img" aria-label="Ten blank lines for working"><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div></div>
+<p>A whole number is divisible by ten only when its final digit is zero.
+Ending in five is enough for divisibility by five, but it is not enough
+for divisibility by ten.</p>
+<p>The final digit is six rather than zero. The number is therefore not
+divisible by ten.</p>
+<p>Determine whether the following number is divisible by three.</p>
+<p><span class="math display">\[219,552\]</span></p>
+<div class="work-space" role="img" aria-label="Ten blank lines for working"><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div></div>
+<p>Divisibility by three does not depend on the final digit. Add all of
+the digits of the number. If that digit sum is divisible by three, then
+the original number is divisible by three. The digit sum is only a test;
+it is not another expression with the same value as the original
+number.</p>
+<p>The sum of the digits is <span class="math inline">\(2\  + \ 1\  + \
+9\  + \ 5\  + \ 5\  + \ 2\  = \ 24\)</span>. Twenty-four is divisible by
+three, so 219,552 is divisible by three.</p>
+<p>Determine whether the following number is divisible by nine.</p>
+<p><span class="math display">\[692,838\]</span></p>
+<div class="work-space" role="img" aria-label="Ten blank lines for working"><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div></div>
+<p>The property for nine has the same form as the property for three.
+Add the digits. The original number is divisible by nine exactly when
+its digit sum is divisible by nine.</p>
+<p>The sum of the digits is <span class="math inline">\(6\  + \ 9\  + \
+2\  + \ 8\  + \ 3\  + \ 8\  = \ 36\)</span>. Thirty-six is divisible by
+nine, so 692,838 is divisible by nine.</p>
+<p>Now consider another number.</p>
+<p><span class="math display">\[820,297\]</span></p>
+<div class="work-space" role="img" aria-label="Ten blank lines for working"><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div></div>
+<p>The sum of the digits is <span class="math inline">\(8\  + \ 2\  + \
+0\  + \ 2\  + \ 9\  + \ 7\  = \ 28\)</span>. Twenty-eight is not
+divisible by nine, so 820,297 is not divisible by nine.</p>
+<p>A number may be divisible by three without being divisible by nine.
+Passing the divisibility test for nine automatically means that the
+number also passes the test for three, but passing the test for three
+does not automatically mean that the number passes the test for
+nine.</p>
+<p>Determine whether the following number is divisible by seven.</p>
+<p><span class="math display">\[524,652\]</span></p>
+<div class="work-space" role="img" aria-label="Ten blank lines for working"><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div><div class="blank-line" aria-hidden="true"></div></div>
+<p>The properties for 2, 3, 5, 9, and 10 let us settle the question
+without performing division. When no convenient property has been
+provided for the divisor, use long division and inspect the
+remainder.</p>
+<p>Use long division to divide the number by seven. The quotient is
+74,950 with a remainder of two. Because the remainder is not zero,
+524,652 is not divisible by seven.</p>
+<p>Use the smallest amount of work that settles the question. For 2, 5,
+and 10, inspect the final digit. For 3 and 9, inspect the digit sum.
+When no useful property is available, use long division and check the
+remainder. In every case, divisible means that nothing is left over.</p>
+<p>Multiplication facts describe equal groups. For example, <span
+class="math inline">\(7 \cdot 8 = 56\)</span> means seven groups of
+eight and also eight groups of seven. The commutative property lets one
+fact support the reversed fact.</p>
+<p>Use known facts to build less familiar ones. Since <span
+class="math inline">\(5 \cdot 8 = 40\)</span>, one more group of eight
+gives <span class="math inline">\(6 \cdot 8 = 48\)</span>. Since <span
+class="math inline">\(10 \cdot 7 = 70\)</span>, subtract one group of
+seven to get <span class="math inline">\(9 \cdot 7 = 63\)</span>.</p>
+<p>Division reverses multiplication. The fact <span
+class="math inline">\(6 \cdot 9 = 54\)</span> also gives <span
+class="math inline">\(54 \div 6 = 9\)</span> and <span
+class="math inline">\(54 \div 9 = 6\)</span>. This connection supports
+divisibility, fraction reduction, factoring, and equation solving.</p>
+<p>Practice the facts through <span class="math inline">\(12 \cdot
+12\)</span>, paying special attention to facts that are not yet
+automatic. For each multiplication fact, state both related division
+facts.</p>
+
+    <nav class="topic-nav bottom-nav" aria-label="Lesson navigation">
+      <a href="../index.html">Table of contents</a>
+        <a href="topic-02-prime-factorization.html">Next topic</a>
+    </nav>
+  </main>
+</body>
+</html>
