@@ -18,206 +18,132 @@
   <main>
     <nav class="topic-nav" aria-label="Lesson navigation">
       <a href="../index.html">Table of contents</a>
-        <a href="topic-02-prime-factorization.html">Next topic</a>
+      <a href="topic-02-prime-factorization.html">Next topic</a>
     </nav>
     <p class="series-title">TSM Lecture Notes · Unit 1</p>
-<h1 id="topic-1-multiplication-tables-and-divisibility-properties">Topic
-1: Multiplication Tables and Divisibility Properties</h1>
-<p><strong>Assigned to:</strong> TSM 098 and TSM 099</p>
-<h2 id="overview">Overview</h2>
-<p>This topic builds multiplication-table fluency and uses divisibility
-properties to decide efficiently whether one whole number divides
-another without a remainder.</p>
-<h2 id="key-definitions">Key definitions</h2>
-<p>Divisible: a division has remainder 0. Factor: a whole number that
-divides another whole number evenly. Divisibility property: a shortcut
-for deciding divisibility from a number's digits.</p>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Consider the following number.</p>
-<p><span class="math display">\[24\]</span></p>
-</div>
-<button class="solution-button" data-solution-button type="button" aria-expanded="false">Click to show solution</button>
-</div>
-<div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
-<p>Twenty-four is divisible by two because it can be written as <span
-class="math inline">\(2\  \cdot \ 12\)</span>. That is, twenty-four
-contains exactly twelve groups of two, with nothing left over.</p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Now consider another number.</p>
-<p><span class="math display">\[25\]</span></p>
-</div>
-<button class="solution-button" data-solution-button type="button" aria-expanded="false">Click to show solution</button>
-</div>
-<div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
-<p>Twenty-five is not divisible by two. Twelve groups of two account for
-twenty-four, leaving one extra. In other words, dividing twenty-five by
-two would produce a remainder of one.</p>
-<p>Divisibility is a yes-or-no question about a whole number. When we
-ask whether a number is divisible by another number, we are asking
-whether it can be separated into equal groups with nothing left over. If
-nothing is left over, the answer is yes. If there is a remainder, the
-answer is no.</p>
-<p>A divisibility property lets us answer that question without actually
-carrying out the division. Some properties depend only on the final
-digit. Others depend on the sum of the digits. These properties tell us
-whether division would come out evenly; they do not require us to find
-the quotient.</p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Determine whether the following number is divisible by two.</p>
-<p><span class="math display">\[233,557\]</span></p>
-</div>
-<button class="solution-button" data-solution-button type="button" aria-expanded="false">Click to show solution</button>
-</div>
-<div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
-<p>A whole number is divisible by two when its final digit is even. The
-even digits are 0, 2, 4, 6, and 8. We do not need to inspect the other
-digits, and we do not need to perform the division. The final digit
-settles the question.</p>
-<p>The final digit is seven. Seven is odd, so the number is not
-divisible by two.</p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Determine whether the following number is divisible by five.</p>
-<p><span class="math display">\[418,980\]</span></p>
-</div>
-<button class="solution-button" data-solution-button type="button" aria-expanded="false">Click to show solution</button>
-</div>
-<div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
-<p>A whole number is divisible by five when its final digit is either
-zero or five. Again, the entire decision comes from the final digit.</p>
-<p>The final digit is zero, so the number is divisible by five. The fact
-that the number also happens to be divisible by other numbers is not
-needed here; the question only asks about divisibility by five.</p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Determine whether the following number is divisible by ten.</p>
-<p><span class="math display">\[665,926\]</span></p>
-</div>
-<button class="solution-button" data-solution-button type="button" aria-expanded="false">Click to show solution</button>
-</div>
-<div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
-<p>A whole number is divisible by ten only when its final digit is zero.
-Ending in five is enough for divisibility by five, but it is not enough
-for divisibility by ten.</p>
-<p>The final digit is six rather than zero. The number is therefore not
-divisible by ten.</p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Determine whether the following number is divisible by three.</p>
-<p><span class="math display">\[219,552\]</span></p>
-</div>
-<button class="solution-button" data-solution-button type="button" aria-expanded="false">Click to show solution</button>
-</div>
-<div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
-<p>Divisibility by three does not depend on the final digit. Add all of
-the digits of the number. If that digit sum is divisible by three, then
-the original number is divisible by three. The digit sum is only a test;
-it is not another expression with the same value as the original
-number.</p>
-<p>The sum of the digits is <span class="math inline">\(2\  + \ 1\  + \
-9\  + \ 5\  + \ 5\  + \ 2\  = \ 24\)</span>. Twenty-four is divisible by
-three, so 219,552 is divisible by three.</p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Determine whether the following number is divisible by nine.</p>
-<p><span class="math display">\[692,838\]</span></p>
-</div>
-<button class="solution-button" data-solution-button type="button" aria-expanded="false">Click to show solution</button>
-</div>
-<div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
-<p>The property for nine has the same form as the property for three.
-Add the digits. The original number is divisible by nine exactly when
-its digit sum is divisible by nine.</p>
-<p>The sum of the digits is <span class="math inline">\(6\  + \ 9\  + \
-2\  + \ 8\  + \ 3\  + \ 8\  = \ 36\)</span>. Thirty-six is divisible by
-nine, so 692,838 is divisible by nine.</p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Now consider another number.</p>
-<p><span class="math display">\[820,297\]</span></p>
-</div>
-<button class="solution-button" data-solution-button type="button" aria-expanded="false">Click to show solution</button>
-</div>
-<div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
-<p>The sum of the digits is <span class="math inline">\(8\  + \ 2\  + \
-0\  + \ 2\  + \ 9\  + \ 7\  = \ 28\)</span>. Twenty-eight is not
-divisible by nine, so 820,297 is not divisible by nine.</p>
-<p>A number may be divisible by three without being divisible by nine.
-Passing the divisibility test for nine automatically means that the
-number also passes the test for three, but passing the test for three
-does not automatically mean that the number passes the test for
-nine.</p>
-</div>
-</section>
-<section class="worked-example">
-<div class="problem-row">
-<div class="problem-statement">
-<p>Determine whether the following number is divisible by seven.</p>
-<p><span class="math display">\[524,652\]</span></p>
-</div>
-<button class="solution-button" data-solution-button type="button" aria-expanded="false">Click to show solution</button>
-</div>
-<div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
-<p>The properties for 2, 3, 5, 9, and 10 let us settle the question
-without performing division. When no convenient property has been
-provided for the divisor, use long division and inspect the
-remainder.</p>
-<p>Use long division to divide the number by seven. The quotient is
-74,950 with a remainder of two. Because the remainder is not zero,
-524,652 is not divisible by seven.</p>
-<p>Use the smallest amount of work that settles the question. For 2, 5,
-and 10, inspect the final digit. For 3 and 9, inspect the digit sum.
-When no useful property is available, use long division and check the
-remainder. In every case, divisible means that nothing is left over.</p>
-<p>Multiplication facts describe equal groups. For example, <span
-class="math inline">\(7 \cdot 8 = 56\)</span> means seven groups of
-eight and also eight groups of seven. The commutative property lets one
-fact support the reversed fact.</p>
-<p>Use known facts to build less familiar ones. Since <span
-class="math inline">\(5 \cdot 8 = 40\)</span>, one more group of eight
-gives <span class="math inline">\(6 \cdot 8 = 48\)</span>. Since <span
-class="math inline">\(10 \cdot 7 = 70\)</span>, subtract one group of
-seven to get <span class="math inline">\(9 \cdot 7 = 63\)</span>.</p>
-<p>Division reverses multiplication. The fact <span
-class="math inline">\(6 \cdot 9 = 54\)</span> also gives <span
-class="math inline">\(54 \div 6 = 9\)</span> and <span
-class="math inline">\(54 \div 9 = 6\)</span>. This connection supports
-divisibility, fraction reduction, factoring, and equation solving.</p>
-<p>Practice the facts through <span class="math inline">\(12 \cdot
-12\)</span>, paying special attention to facts that are not yet
-automatic. For each multiplication fact, state both related division
-facts.</p>
-</div>
-</section>
+    <h1 id="topic-1-multiplication-tables-and-divisibility-properties">Topic 1: Multiplication Tables and Divisibility Properties</h1>
+    <p><strong>Assigned to:</strong> TSM 098 and TSM 099</p>
+
+    <h2 id="overview">Overview</h2>
+    <p>Multiplication tables do more than help us multiply quickly. When we count by a number, we generate all of the positive multiples of that number. Looking at those multiples reveals patterns that can sometimes tell us whether a much larger number is divisible by that number without actually doing the division. In this topic, we will discover useful divisibility properties for 2, 5, 10, 3, and 9 by looking for patterns in their multiplication tables. We will also see what happens with 7, where no comparably simple pattern appears.</p>
+
+    <h2 id="key-definitions">Key definitions</h2>
+    <p><strong>Multiple:</strong> A number obtained by multiplying a given whole number by a whole number.</p>
+    <p><strong>Divisible:</strong> A whole number is divisible by another whole number when the division has remainder 0.</p>
+    <p><strong>Factor:</strong> A whole number that divides another whole number evenly.</p>
+    <p><strong>Divisibility property:</strong> A shortcut for deciding whether a number is divisible by another number without carrying out the division.</p>
+
+    <h2 id="patterns-2-5-10">Patterns when counting by 2, 5, and 10</h2>
+    <p>Start by looking at what happens when we count by 2. These are the first several multiples of 2:</p>
+    <p class="math display">\[2,\ 4,\ 6,\ 8,\ 10,\ 12,\ 14,\ 16,\ 18,\ 20,\ 22,\ 24,\ldots\]</p>
+    <p>Look only at the final digit. The final digits repeat:</p>
+    <p class="math display">\[2,\ 4,\ 6,\ 8,\ 0,\ 2,\ 4,\ 6,\ 8,\ 0,\ldots\]</p>
+    <p>Every number we reach by counting by 2 ends in 0, 2, 4, 6, or 8. This gives us a shortcut: a whole number is divisible by 2 exactly when its final digit is 0, 2, 4, 6, or 8.</p>
+
+    <p>Now count by 5:</p>
+    <p class="math display">\[5,\ 10,\ 15,\ 20,\ 25,\ 30,\ 35,\ 40,\ 45,\ 50,\ldots\]</p>
+    <p>The final digits alternate between 5 and 0. So a whole number is divisible by 5 exactly when its final digit is 5 or 0.</p>
+
+    <p>Finally, count by 10:</p>
+    <p class="math display">\[10,\ 20,\ 30,\ 40,\ 50,\ 60,\ 70,\ 80,\ 90,\ 100,\ldots\]</p>
+    <p>Every multiple of 10 ends in 0. So a whole number is divisible by 10 exactly when its final digit is 0.</p>
+
+    <section class="worked-example">
+      <div class="problem-row"><div class="problem-statement">
+        <p>Without dividing, determine whether 233,558 is divisible by 2.</p>
+      </div><button class="solution-button" data-solution-button type="button" aria-expanded="false">Click to show solution</button></div>
+      <div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
+        <p>The final digit is 8. Since every number ending in 0, 2, 4, 6, or 8 is divisible by 2, 233,558 is divisible by 2.</p>
+      </div>
+    </section>
+
+    <section class="worked-example">
+      <div class="problem-row"><div class="problem-statement">
+        <p>Without dividing, determine whether 418,985 is divisible by 5.</p>
+      </div><button class="solution-button" data-solution-button type="button" aria-expanded="false">Click to show solution</button></div>
+      <div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
+        <p>The final digit is 5. The multiplication table for 5 showed that multiples of 5 always end in 0 or 5, so 418,985 is divisible by 5.</p>
+      </div>
+    </section>
+
+    <section class="worked-example">
+      <div class="problem-row"><div class="problem-statement">
+        <p>Without dividing, determine whether 665,920 is divisible by 10.</p>
+      </div><button class="solution-button" data-solution-button type="button" aria-expanded="false">Click to show solution</button></div>
+      <div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
+        <p>The final digit is 0. Every multiple of 10 ends in 0, so 665,920 is divisible by 10.</p>
+      </div>
+    </section>
+
+    <h2 id="patterns-3-9">A different pattern when counting by 3 and 9</h2>
+    <p>The final digit works beautifully for 2, 5, and 10. But the multiples of 3 do not have a useful final-digit pattern:</p>
+    <p class="math display">\[3,\ 6,\ 9,\ 12,\ 15,\ 18,\ 21,\ 24,\ 27,\ldots\]</p>
+    <p>Instead, look at the two-digit multiples and add their digits:</p>
+    <p class="math display">\[12:\ 1+2=3\qquad 15:\ 1+5=6\qquad 18:\ 1+8=9\]</p>
+    <p class="math display">\[21:\ 2+1=3\qquad 24:\ 2+4=6\qquad 27:\ 2+7=9\]</p>
+    <p>The digit sums are themselves multiples of 3. This pattern does not stop when the numbers become larger. If we continue counting by 3, we eventually reach three-digit and still larger multiples:</p>
+    <p class="math display">\[\ldots\quad 123:\ 1+2+3=6\quad\ldots\quad 372:\ 3+7+2=12\quad\ldots\quad 1{,}248:\ 1+2+4+8=15\quad\ldots\]</p>
+    <p>Each digit sum is divisible by 3. This leads to the divisibility property for 3: a whole number is divisible by 3 exactly when the sum of its digits is divisible by 3.</p>
+
+    <p>Now look at the multiples of 9:</p>
+    <p class="math display">\[9,\ 18,\ 27,\ 36,\ 45,\ 54,\ 63,\ 72,\ 81,\ldots\]</p>
+    <p>Again, add the digits of several two-digit multiples:</p>
+    <p class="math display">\[18:\ 1+8=9\qquad 27:\ 2+7=9\qquad 36:\ 3+6=9\]</p>
+    <p class="math display">\[45:\ 4+5=9\qquad 54:\ 5+4=9\qquad 63:\ 6+3=9\qquad 72:\ 7+2=9\]</p>
+    <p>And if we keep counting by 9, the same idea survives with much larger numbers:</p>
+    <p class="math display">\[\ldots\quad 117:\ 1+1+7=9\quad\ldots\quad 459:\ 4+5+9=18\quad\ldots\quad 1{,}206:\ 1+2+0+6=9\quad\ldots\quad 8{,}019:\ 8+0+1+9=18\quad\ldots\]</p>
+    <p>The digit sum does not always equal 9, but it is always divisible by 9. So a whole number is divisible by 9 exactly when the sum of its digits is divisible by 9.</p>
+
+    <section class="worked-example">
+      <div class="problem-row"><div class="problem-statement">
+        <p>Determine whether 219,552 is divisible by 3 without doing long division.</p>
+      </div><button class="solution-button" data-solution-button type="button" aria-expanded="false">Click to show solution</button></div>
+      <div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
+        <p>Add the digits: \(2+1+9+5+5+2=24\). Since 24 is divisible by 3, 219,552 is divisible by 3.</p>
+      </div>
+    </section>
+
+    <section class="worked-example">
+      <div class="problem-row"><div class="problem-statement">
+        <p>Determine whether 692,838 is divisible by 9 without doing long division.</p>
+      </div><button class="solution-button" data-solution-button type="button" aria-expanded="false">Click to show solution</button></div>
+      <div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
+        <p>Add the digits: \(6+9+2+8+3+8=36\). Since 36 is divisible by 9, 692,838 is divisible by 9.</p>
+      </div>
+    </section>
+
+    <section class="worked-example">
+      <div class="problem-row"><div class="problem-statement">
+        <p>Determine whether 820,297 is divisible by 3 and whether it is divisible by 9.</p>
+      </div><button class="solution-button" data-solution-button type="button" aria-expanded="false">Click to show solution</button></div>
+      <div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
+        <p>Add the digits: \(8+2+0+2+9+7=28\). Since 28 is divisible by neither 3 nor 9, 820,297 is divisible by neither 3 nor 9.</p>
+      </div>
+    </section>
+
+    <h2 id="what-about-7">What happens when we count by 7?</h2>
+    <p>It is tempting to hope that every multiplication table gives us a simple divisibility shortcut. Consider the multiples of 7:</p>
+    <p class="math display">\[7,\ 14,\ 21,\ 28,\ 35,\ 42,\ 49,\ 56,\ 63,\ 70,\ 77,\ 84,\ 91,\ 98,\ 105,\ 112,\ 119,\ldots\]</p>
+    <p>The final digits wander through many possibilities. They do not settle into a small set like the multiples of 2, 5, or 10. Adding the digits does not give us a simple pattern either:</p>
+    <p class="math display">\[14:\ 1+4=5\qquad 21:\ 2+1=3\qquad 28:\ 2+8=10\qquad 35:\ 3+5=8\qquad 42:\ 4+2=6\]</p>
+    <p>There are divisibility tests for 7, but they are not nearly as immediate as the digit patterns we have discovered for 2, 3, 5, 9, and 10. For our purposes, the clean way to settle divisibility by 7 is to divide by 7 and inspect the remainder.</p>
+    <p>This highlights the reason the other divisibility properties are useful: <strong>they let us avoid long division.</strong> For 2, 5, and 10, we can inspect the final digit. For 3 and 9, we can add the digits. When we do not have a convenient shortcut, we fall back on division.</p>
+
+    <section class="worked-example">
+      <div class="problem-row"><div class="problem-statement">
+        <p>Determine whether 524,652 is divisible by 7.</p>
+      </div><button class="solution-button" data-solution-button type="button" aria-expanded="false">Click to show solution</button></div>
+      <div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
+        <p>There is no simple final-digit or digit-sum pattern to use here, so divide by 7. The quotient is 74,950 with a remainder of 2. Because the remainder is not 0, 524,652 is not divisible by 7.</p>
+      </div>
+    </section>
+
+    <h2 id="summary">Summary</h2>
+    <p>The divisibility properties in this lesson are not arbitrary rules to memorize. They come from patterns in the multiples of the numbers. Counting by 2, 5, and 10 reveals final-digit patterns. Counting by 3 and 9 reveals digit-sum patterns. Those patterns give us shortcuts that answer a divisibility question without doing long division. For a number such as 7, where no comparably simple pattern appears, division remains the straightforward way to check.</p>
 
     <nav class="topic-nav bottom-nav" aria-label="Lesson navigation">
       <a href="../index.html">Table of contents</a>
-        <a href="topic-02-prime-factorization.html">Next topic</a>
+      <a href="topic-02-prime-factorization.html">Next topic</a>
     </nav>
   </main>
 </body>
