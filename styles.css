@@ -56,15 +56,21 @@ a { color: #175f9e; }
 .worked-example {
   width: calc(100% - 190px);
   max-width: 820px;
-  margin: 0;
-}
-
-.problem-row {
-  position: relative;
+  margin: 32px 0 0;
+  padding-top: 18px;
+  border-top: 2px solid #9fb3c8;
 }
 
 .problem-statement {
   min-width: 0;
+}
+
+.example-label {
+  margin-bottom: 10px;
+}
+
+.solution-row {
+  position: relative;
 }
 
 .solution-button {

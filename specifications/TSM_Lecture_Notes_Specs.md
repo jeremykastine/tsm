@@ -60,14 +60,15 @@ Procedural instruction and explanations of how a method works in practice belong
 Use this exact structure for nearly every example that requires one or more steps:
 
 1. Start a new page.
-2. Put the problem statement at the top of the page.
-3. Do not place a topic heading, section heading, example heading, method heading, or other label above the problem statement.
-4. Immediately after the complete problem statement, insert exactly **ten ordinary blank lines**.
-5. Begin the worked solution and explanation after the tenth blank line.
-6. Use ordinary single-spaced blank paragraphs with normal line height. Do not imitate ten lines by enlarging line height, using a large `Space After` value, inserting a text box, or vertically positioning the solution.
-7. Use the same ten-line gap regardless of whether the solution is short or long.
-8. If the solution flows onto the next page, allow it to continue naturally. Do not move it in advance, shrink it, or reduce the ten-line gap.
-9. Start the next worked problem at the top of a new page.
+2. Begin the worked example with a horizontal rule.
+3. Put a bold numbered label, such as **Problem 1**, immediately below the rule, followed by the problem statement. Restart numbering at **Problem 1** for each topic.
+4. Do not place a topic heading, section heading, method heading, or other label above the numbered problem label.
+5. Immediately after the complete problem statement, insert exactly **ten ordinary blank lines**.
+6. Begin the worked solution with the corresponding bold label, such as **Solution 1**, after the tenth blank line.
+7. Use ordinary single-spaced blank paragraphs with normal line height. Do not imitate ten lines by enlarging line height, using a large `Space After` value, inserting a text box, or vertically positioning the solution.
+8. Use the same ten-line gap regardless of whether the solution is short or long.
+9. If the solution flows onto the next page, allow it to continue naturally. Do not move it in advance, shrink it, or reduce the ten-line gap.
+10. Start the next worked problem at the top of a new page.
 
 The problem statement may occupy more than one paragraph when mathematical notation requires it. Keep all parts of the statement and its displayed expression together before the ten blank lines.
 
@@ -123,7 +124,7 @@ Do not use the compare/contrast exception merely to save pages.
 
 - Use US Letter portrait pages with the established margins, typography, restrained blue accents, and footer design.
 - Preserve title-page formatting, topic bookmarks, internal hyperlinks, page-number fields, native equation formatting, and document metadata.
-- Use heading styles on the cover/contents/topic-opening structure only as appropriate. Worked-problem pages must begin directly with ordinary problem text, not a heading.
+- Use heading styles on the cover/contents/topic-opening structure only as appropriate. The bold **Problem N** and **Solution N** labels are ordinary text, not headings.
 - Prevent clipped text, overlaps, isolated problem fragments, missing glyphs, inconsistent margins, and unexplained font changes.
 - Keep Word files as the editable sources. Export PDFs for student distribution and browser use.
 
@@ -159,8 +160,9 @@ Before delivery, confirm:
 - the linked contents page is intact;
 - every topic starts with one compact heading/assignment/overview/definitions page;
 - detailed procedures and conceptual development occur in worked solutions, not topic introductions;
-- every worked problem begins at the top of a new page with no heading above it;
+- every worked problem begins with a horizontal rule and a bold, correctly numbered **Problem N** label;
 - exactly ten ordinary single-spaced blank lines follow each complete problem statement;
+- every worked solution begins with the matching bold **Solution N** label;
 - no large paragraph-spacing workaround or enlarged line height is used;
 - only intentional compare/contrast pages contain multiple problems;
 - solutions may continue naturally to later pages;
@@ -178,13 +180,13 @@ The interactive rules below replace the fixed ten-blank-line rule for the HTML e
 - Publish one HTML file for each topic, numbered Topic 1 through Topic 37.
 - Place a simple `index.html` at the repository root and group all topic links by unit as a table of contents.
 - Do not imitate Word pages or insert page breaks in the HTML edition. Let each topic flow continuously in the browser.
-- Place each worked solution directly beneath its complete problem statement in the document flow.
+- Begin every worked example with a horizontal rule and a bold **Problem N** label. Number examples in document order and restart at **Problem 1** on every topic page.
+- Place each worked solution directly beneath its complete problem statement in the document flow, and begin it with the corresponding bold **Solution N** label.
 - Hide the solution initially with a method such as `visibility: hidden` that preserves the solution's full natural height. Do not use `display: none`, remove the content from layout, or replace it with a fixed-height gap.
-- Put a real `Click to show solution` button in the right margin beside the problem statement. The button must remain outside both the problem/snipping column and the blank solution area.
+- Put a real `Click to show solution` button in the right margin beside the beginning of the solution area, aligned with the **Solution N** label rather than the problem statement. The button must remain outside both the problem/snipping column and the blank solution area.
 - Clicking the button must reveal the solution in its reserved space without moving later content. Change the button to `Click to hide solution`; clicking it again must restore the blank area.
 - Include the initial hidden state directly in the solution panel's HTML and reinforce it in JavaScript, so a stale or delayed stylesheet cannot expose solutions.
 - Keep the entire problem and naturally sized blank solution region unobstructed for instructor screenshots.
 - Preserve topic titles, **Assigned to** lines, overviews, key definitions, mathematical notation, instructional order, and worked explanations.
 - Keep the HTML design simple, readable, responsive, and suitable for GitHub Pages.
 - Keep the five original Word files, the co-listed schedule, and both specification files in the repository with the HTML edition.
-

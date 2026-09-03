@@ -1,8 +1,30 @@
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.worked-example').forEach(function (example) {
+  document.querySelectorAll('.worked-example').forEach(function (example, index) {
     var button = example.querySelector('[data-solution-button]');
     var panel = example.querySelector('[data-solution-panel]');
-    if (!button || !panel) return;
+    var problem = example.querySelector('.problem-statement');
+    if (!button || !panel || !problem) return;
+
+    var number = index + 1;
+    var problemLabel = document.createElement('p');
+    problemLabel.className = 'example-label problem-label';
+    problemLabel.innerHTML = '<strong>Problem ' + number + '</strong>';
+    problem.insertBefore(problemLabel, problem.firstChild);
+
+    var solutionLabel = document.createElement('p');
+    solutionLabel.className = 'example-label solution-label';
+    solutionLabel.innerHTML = '<strong>Solution ' + number + '</strong>';
+    panel.insertBefore(solutionLabel, panel.firstChild);
+
+    var solutionRow = document.createElement('div');
+    solutionRow.className = 'solution-row';
+    panel.parentNode.insertBefore(solutionRow, panel);
+    solutionRow.appendChild(panel);
+    solutionRow.appendChild(button);
+
+    var panelId = 'solution-' + number;
+    panel.id = panelId;
+    button.setAttribute('aria-controls', panelId);
 
     function setVisible(visible) {
       panel.classList.toggle('solution-visible', visible);
