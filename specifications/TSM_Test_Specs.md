@@ -80,9 +80,9 @@ State the assessment name and number of versions. The standardized presentation 
 
 ## 4. Scoring
 
-- Every numbered main question unit is worth **10 points** by default.
-- Therefore every five-question Part III unit test is worth **50 points total** and every ten-question Part IV diagnostic, practice final, or official final is worth **100 points total**.
-- If a main question has multiple parts, assign subpart point values that sum to 10.
+- Every five-question Part III unit test is worth **100 points total**, with each numbered main question unit worth **20 points**.
+- Every ten-question Part IV diagnostic, practice final, or official final is worth **100 points total**, with each numbered main question unit worth **10 points**.
+- If a main question has multiple parts, assign subpart point values that sum to the full value of that main question: **20 points for Part III unit-test questions** and **10 points for Part IV exam questions**.
 - Prefer whole-number point values; half-points are acceptable when needed for an even or sensible distribution.
 - Point weights should reflect the mathematical work expected rather than merely the number of blanks.
 - Do **not** print point values in the exam booklet by default. Point values belong on the student answer sheet and answer key unless a request explicitly asks for them in the booklet.
@@ -111,8 +111,9 @@ Every generated assessment version includes a student answer sheet and a paired 
 - Include the version identifier, **student name**, question numbers, concise part labels, point values, and appropriately sized answer lines/boxes.
 - Do **not** include a section/course-section field.
 - Follow the actual randomized or standardized numbering/order of that version.
-- Each main question visibly totals 10 points. Multipart point values sum to 10.
-- For a single-part 10-point question, show the question once with `10 points`; do not invent a redundant A/1 subpart or a second 10-point label beneath it.
+- For Part III unit tests, each main question visibly totals **20 points** and multipart point values sum to 20.
+- For Part IV diagnostics, practice finals, and official finals, each main question visibly totals **10 points** and multipart point values sum to 10.
+- For a single-part question, show the question once with its full point value (`20 points` on a Part III unit test or `10 points` on a Part IV exam); do not invent a redundant A/1 subpart or a second point-value label beneath it.
 - For graphing work performed directly on a grid in the exam booklet, the answer sheet may use a concise label such as `Graph (see booklet)` with its point value rather than duplicating the entire grid, unless a generation request says otherwise.
 
 ### Row geometry
@@ -883,7 +884,7 @@ Before returning tests created from this guide, the generating system must confi
 
 - The requested assessment names and number of versions are correct.
 - Every Part III unit-test version contains exactly five numbered question units. Every Part IV exam version contains exactly ten numbered question units. Required multipart structures remain intact.
-- Every main question is worth 10 points; Part III tests total 50 points and Part IV exams total 100 points. Multipart point values sum correctly.
+- Every Part III unit-test main question is worth **20 points** and each Part III test totals **100 points**; every Part IV exam main question is worth **10 points** and each Part IV exam totals **100 points**. Multipart point values sum correctly to the applicable main-question value.
 - Question order follows the correct mode: randomized for unit tests, diagnostics, and practice finals unless otherwise requested; standardized for an official final only when the official position map is available. Numerical content varies across versions without violating constraints.
 - Version identifiers follow the timestamp convention `YYYYMMDDHHMM`, with `.1`, `.2`, `.3`, etc. only for multiple versions generated together.
 - Every diagnostic or final has exactly six institutional items and four coverage-balancing supplemental items.
