@@ -39,6 +39,8 @@ Begin each topic with its established title, Assigned to line, brief Overview, a
 - Place a simple `index.html` at the repository root and group all topic links by unit as a table of contents.
 - Do not imitate Word pages or insert page breaks in the HTML edition. Let each topic flow continuously in the browser.
 - Begin every worked example with a horizontal rule and a bold **Problem N** label. Number examples in document order and restart at **Problem 1** on every topic page.
+- Write each problem statement as a concise, precise, self-contained task that can be understood and attempted with the solution hidden. State the action (evaluate, simplify, factor, solve, graph, find, or explain) and include every given expression, equation, value, condition, and requested answer form. Wording such as “Consider,” “Start with,” “Begin with,” or “Worked example” does not state a task by itself.
+- Keep answers, intermediate steps, and procedural explanations in the worked solution unless the problem explicitly supplies them as givens. Do not make a problem depend on a previous solution or a hidden continuation; keep successive steps of one problem together. For comparisons, display every expression being compared and say what to evaluate or explain.
 - Place each worked solution directly beneath its complete problem statement in the document flow, and begin it with the corresponding bold **Solution N** label.
 - Hide the solution initially with a method such as `visibility: hidden` that preserves the solution's full natural height. Do not use `display: none`, remove the content from layout, or replace it with a fixed-height gap.
 - Put a real `Click to show solution` button in the right margin beside the beginning of the solution area, aligned with the **Solution N** label rather than the problem statement. The button must remain outside both the problem/snipping column and the blank solution area.
@@ -117,6 +119,7 @@ Before pushing, review every changed problem and worked solution, check the math
 - Topic titles, assignment labels, overviews, and key definitions are intact.
 - Worked problems and solutions are correctly numbered in document order, restarting with Problem 1 and Solution 1 on each topic.
 - Each example begins with a horizontal rule and contains a complete problem statement and worked solution.
+- With every solution hidden, each problem still states a concise, precise task with all required givens, comparison items, and answer requirements. Revealing the solution shows work and answers for that exact task.
 - Only intentional compare/contrast sections contain multiple problems.
 - Solutions begin hidden while reserving their full natural height.
 - Reveal/hide controls are accessible and outside the areas used for instructor screenshots.
