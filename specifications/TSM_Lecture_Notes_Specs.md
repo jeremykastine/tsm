@@ -8,7 +8,7 @@ The notes serve as assigned readings for students who miss class or need indepen
 
 Edit the HTML files in `lessons/` directly. Keep one maintained copy of each topic rather than a parallel Word edition.
 
-All 37 topics were compared with the Word documents before removing duplicates. Topics 2–37 match in content after accounting for formatting. The Unit 1 Word document is retained as a reference because its older Topic 1 contains guidance on building multiplication facts and connecting multiplication with division that is absent from the newer HTML lesson. Do not treat that document as an editable source to synchronize with HTML or recreate Word documents for Units 2–5.
+All 37 topics were compared with the Word documents before removing them. Topics 2–37 matched in content after accounting for formatting. The older Topic 1 examples and multiplication/division fact guidance have been incorporated into the current Topic 1 HTML lesson. The HTML notes now contain all instructional material from the former Word documents. Do not recreate or synchronize a parallel Word edition.
 
 ## 2. Topic files and unit boundaries
 
@@ -47,7 +47,7 @@ Begin each topic with its established title, Assigned to line, brief Overview, a
 - Keep the entire problem and naturally sized blank solution region unobstructed for instructor screenshots.
 - Preserve topic titles, **Assigned to** lines, overviews, key definitions, mathematical notation, instructional order, and worked explanations.
 - Keep the HTML design simple, readable, responsive, and suitable for GitHub Pages.
-- Keep the co-listed schedule and both specification files in the repository. The Unit 1 Word document is retained only as a reference because its older Topic 1 contains material absent from HTML.
+- Keep the co-listed schedule and both specification files in the repository. Keep lecture-note content in HTML only.
 
 ## 6. One-problem rule and compare/contrast exception
 
