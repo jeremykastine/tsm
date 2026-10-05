@@ -1,27 +1,26 @@
 # TSM Lecture Notes Specifications
 
-This file is the shared specification for creating and editing the five TSM 098-099 lecture-note documents. Treat it as authoritative unless a newer explicit instruction supersedes it; when that happens, apply the new instruction and update this file.
+This file governs the TSM 098–099 HTML lecture notes. Treat it as authoritative unless a newer explicit instruction supersedes it; when that happens, apply the new instruction and update this file.
 
-## 1. Purpose
+## 1. Purpose and maintained source
 
-The documents serve simultaneously as:
+The notes serve as assigned readings for students who miss class or need independent review and as lecture notes the instructor can isolate with the Windows Snipping Tool and mark up during class. Prioritize clear worked examples, unobstructed work areas, and fast navigation.
 
-1. assigned readings for students who miss class or need independent review; and
-2. lecture notes that the instructor can isolate with the Windows Snipping Tool and mark up during class.
+Edit the HTML files in `lessons/` directly. Keep one maintained copy of each topic rather than a parallel Word edition.
 
-The layout therefore prioritizes clear worked examples, predictable white space, clean snippets, and fast navigation. Large page counts are acceptable.
+All 37 topics were compared with the Word documents before removing duplicates. Topics 2–37 match in content after accounting for formatting. The Unit 1 Word document is retained as a reference because its older Topic 1 contains guidance on building multiplication facts and connecting multiplication with division that is absent from the newer HTML lesson. Do not treat that document as an editable source to synchronize with HTML or recreate Word documents for Units 2–5.
 
-## 2. Required files and topic boundaries
+## 2. Topic files and unit boundaries
 
-| Unit | Title | Topics | Required filename |
-|---|---|---:|---|
-| 1 | Arithmetic | 1-8 | `TSM_Lecture_Notes_Unit_1_Arithmetic_Topics_1_through_8.docx` |
-| 2 | Expressions | 9-23 | `TSM_Lecture_Notes_Unit_2_Expressions_Topics_9_through_23.docx` |
-| 3 | Solving Equations | 24-29 | `TSM_Lecture_Notes_Unit_3_Solving_Equations_Topics_24_through_29.docx` |
-| 4 | Two-Variable Equations | 30-34 | `TSM_Lecture_Notes_Unit_4_Two_Variable_Equations_Topics_30_through_34.docx` |
-| 5 | Word Problems | 35-37 | `TSM_Lecture_Notes_Unit_5_Word_Problems_Topics_35_through_37.docx` |
+| Unit | Title | Topics |
+|---|---|---:|
+| 1 | Arithmetic | 1–8 |
+| 2 | Expressions | 9–23 |
+| 3 | Solving Equations | 24–29 |
+| 4 | Two-Variable Equations | 30–34 |
+| 5 | Word Problems | 35–37 |
 
-Do not change topic numbers, instructional order, unit boundaries, or required filenames unless explicitly instructed.
+Maintain one HTML file per topic using the established filenames. Do not change topic numbers, instructional order, or unit boundaries unless explicitly instructed.
 
 ## 3. Terminology and course labels
 
@@ -30,152 +29,11 @@ Do not change topic numbers, instructional order, unit boundaries, or required f
 - Use **TSM 098** and **TSM 099** consistently.
 - Preserve every topic's **Assigned to** line. Do not infer assessment coverage from a topic's course assignment.
 
-## 4. Cover page and contents page
+## 4. Topic introduction
 
-The first page of each Word document is a cover page. It contains only:
+Begin each topic with its established title, Assigned to line, brief Overview, and Key definitions. Keep detailed procedures, warnings, reasoning, and examples in the worked solutions near the steps where they become relevant.
 
-1. `TSM Lecture Notes`
-2. `Unit N: Unit Title`
-3. `Topics X through Y`
-
-Leave the remainder of the cover page blank. Preserve the established centered formatting.
-
-The next page is the linked table of contents. It must list every topic in that unit and no others. Preserve the established static internal links, topic bookmarks, page-number fields, and **Back to Table of Contents** footer link. Use real Word heading styles for topic headings so Word and exported PDFs retain a useful navigation outline.
-
-## 5. Topic-opening page
-
-Every topic begins on a new page. The first page of the topic contains only the compact topic introduction:
-
-1. the established `Topic N: Topic Title` heading;
-2. the established **Assigned to** line;
-3. an **Overview**; and
-4. **Key definitions** needed for the topic.
-
-The overview must remain brief. It should state what the topic is about and what kind of problem or purpose the topic addresses. Collect the topic's bare-bones definitions on this page. Do not place detailed procedures, step-by-step methods, lengthy conceptual development, warnings, or worked examples on the topic-opening page.
-
-Procedural instruction and explanations of how a method works in practice belong in the worked solution sections that follow.
-
-## 6. Standard worked-problem page
-
-Use this exact structure for nearly every example that requires one or more steps:
-
-1. Start a new page.
-2. Begin the worked example with a horizontal rule.
-3. Put a bold numbered label, such as **Problem 1**, immediately below the rule, followed by the problem statement. Restart numbering at **Problem 1** for each topic.
-4. Do not place a topic heading, section heading, method heading, or other label above the numbered problem label.
-5. Immediately after the complete problem statement, insert exactly **ten ordinary blank lines**.
-6. Begin the worked solution with the corresponding bold label, such as **Solution 1**, after the tenth blank line.
-7. Use ordinary single-spaced blank paragraphs with normal line height. Do not imitate ten lines by enlarging line height, using a large `Space After` value, inserting a text box, or vertically positioning the solution.
-8. Use the same ten-line gap regardless of whether the solution is short or long.
-9. If the solution flows onto the next page, allow it to continue naturally. Do not move it in advance, shrink it, or reduce the ten-line gap.
-10. Start the next worked problem at the top of a new page.
-
-The problem statement may occupy more than one paragraph when mathematical notation requires it. Keep all parts of the statement and its displayed expression together before the ten blank lines.
-
-## 7. One-problem rule and compare/contrast exception
-
-Normally, place only one problem on a worked-problem page.
-
-More than one problem may share a page only when the problems are intentionally presented as a comparison. In that case:
-
-- begin with wording such as `Compare and contrast the following two problems.` or `Compare and contrast the following four problems.`;
-- place all compared problem statements before the ten blank lines; and
-- make the solution both solve the problems and explicitly compare their structures, methods, or results.
-
-Do not use the compare/contrast exception merely to save pages.
-
-## 8. Examples-first instructional style
-
-- Introduce procedures through problems rather than through a long preliminary lecture.
-- A student may initially see a problem without yet knowing the method. The worked explanation must then be complete enough for an absent student to reconstruct the lesson.
-- Put the detailed rule, method, warning, and reasoning near the step where it becomes relevant.
-- Keep student-facing prose direct and relatively short.
-- Preserve useful conceptual explanations, but integrate them into worked solutions instead of creating separate lecture pages headed “Procedure,” “Summary,” “Common Mistake,” or similar.
-
-## 9. Worked-solution standards
-
-- Show the intermediate steps students are expected to learn, not only the starting expression and final answer.
-- Keep each algebraic line equivalent to the preceding line unless the prose clearly explains a substitution, comparison, or check.
-- Explain important sign changes, distribution, cancellation, common denominators, factoring decisions, equation-solving operations, and graphing choices in plain language.
-- State restrictions from the original equation before canceling factors or moving variable denominators to the opposite side.
-- Check possible extraneous solutions in the original rational equation.
-- Include both answers when taking an even square root in an equation unless context restricts the result.
-- Do not hide a substantial expected step behind “after simplifying.”
-- Use conventional notation and preserve native Office Math/OMML equations rather than screenshots or plain-text approximations.
-
-## 10. Difficulty and example selection
-
-- Progress from a clear standard case to modest variations.
-- Keep coefficients and constants focused on the intended concept.
-- Include positive and negative cases when sign behavior matters.
-- Use fractional answers when instructionally relevant, but not in every example.
-- Avoid large or unpleasant numbers unless they deliberately motivate a useful strategy, such as simplifying before multiplying.
-- Avoid unnecessary arithmetic, expansion, or factoring that distracts from the topic.
-- Remain within the established TSM 098/099 course scope and schedule.
-
-## 11. Practice material
-
-- Clearly distinguish an assigned practice set from a worked lecture example.
-- Do not place multiple unrelated practice problems on a worked-example page.
-- If a practice problem is incorporated into the lecture-note sequence as an example, give it the same page structure: problem, ten blank lines, then a complete worked solution.
-- Unsolved practice sets should be maintained separately or added only when explicitly requested; they should not interrupt the standard worked-problem sequence.
-
-## 12. Formatting and technical preservation
-
-- Use US Letter portrait pages with the established margins, typography, restrained blue accents, and footer design.
-- Preserve title-page formatting, topic bookmarks, internal hyperlinks, page-number fields, native equation formatting, and document metadata.
-- Use heading styles on the cover/contents/topic-opening structure only as appropriate. The bold **Problem N** and **Solution N** labels are ordinary text, not headings.
-- Prevent clipped text, overlaps, isolated problem fragments, missing glyphs, inconsistent margins, and unexplained font changes.
-- Keep Word files as the editable sources. Export PDFs for student distribution and browser use.
-
-## 13. Cross-listed consistency
-
-- Preserve the established topic sequence for the cross-listed TSM 098/099 course.
-- Keep TSM 098 examples at the established foundational level and TSM 099 examples at the established intermediate-algebra level.
-- Do not use lecture-note edits to redefine test coverage; assessment specifications are maintained separately.
-
-## 14. Editing workflow
-
-For a topic-specific revision:
-
-1. Identify the unit containing the topic.
-2. Edit only that unit unless the change genuinely affects every unit.
-3. Preserve topic numbering, assignment labels, bookmark names, and navigation links.
-4. Recheck each affected problem statement, ten-line gap, and worked explanation.
-5. Render the complete revised unit to page images and inspect every page.
-6. Verify the exported PDF's topic links, footer links, page numbers, and navigation outline.
-
-For a global formatting or instructional change:
-
-1. Update this specification file.
-2. Apply the change consistently to all five Word documents.
-3. Render and verify every changed document.
-
-## 15. Quality-control checklist
-
-Before delivery, confirm:
-
-- filename, unit number, title, and topic range agree;
-- the cover page contains only the three established lines;
-- the linked contents page is intact;
-- every topic starts with one compact heading/assignment/overview/definitions page;
-- detailed procedures and conceptual development occur in worked solutions, not topic introductions;
-- every worked problem begins with a horizontal rule and a bold, correctly numbered **Problem N** label;
-- exactly ten ordinary single-spaced blank lines follow each complete problem statement;
-- every worked solution begins with the matching bold **Solution N** label;
-- no large paragraph-spacing workaround or enlarged line height is used;
-- only intentional compare/contrast pages contain multiple problems;
-- solutions may continue naturally to later pages;
-- equations and mathematical notation are complete and readable;
-- no content is clipped, overlapped, orphaned, or unintentionally omitted;
-- all contents and footer links remain valid in Word and PDF; and
-- no placeholder text remains.
-
-## 16. HTML publishing format
-
-The Word files remain the editable source documents. The browser edition is generated from those sources and follows these additional requirements:
-
-The interactive rules below replace the fixed ten-blank-line rule for the HTML edition only. Section 6 continues to govern the editable Word source documents.
+## 5. Worked examples and browser behavior
 
 - Publish one HTML file for each topic, numbered Topic 1 through Topic 37.
 - Place a simple `index.html` at the repository root and group all topic links by unit as a table of contents.
@@ -189,11 +47,86 @@ The interactive rules below replace the fixed ten-blank-line rule for the HTML e
 - Keep the entire problem and naturally sized blank solution region unobstructed for instructor screenshots.
 - Preserve topic titles, **Assigned to** lines, overviews, key definitions, mathematical notation, instructional order, and worked explanations.
 - Keep the HTML design simple, readable, responsive, and suitable for GitHub Pages.
-- Keep the five original Word files, the co-listed schedule, and both specification files in the repository with the HTML edition.
+- Keep the co-listed schedule and both specification files in the repository. The Unit 1 Word document is retained only as a reference because its older Topic 1 contains material absent from HTML.
 
-## 17. Solving equations with numerical or variable denominators
+## 6. One-problem rule and compare/contrast exception
 
-Apply this approach consistently in Topic 28 and Topic 29, in both the Word sources and HTML edition:
+Normally, place only one problem in a worked-example section.
+
+More than one problem may share a section only when the problems are intentionally presented as a comparison. In that case:
+
+- begin with wording such as `Compare and contrast the following two problems.` or `Compare and contrast the following four problems.`;
+- place all compared problem statements in the problem statement, before the solution area; and
+- make the solution both solve the problems and explicitly compare their structures, methods, or results.
+
+Do not use the compare/contrast exception merely to save space.
+
+## 7. Examples-first instructional style
+
+- Introduce procedures through problems rather than through a long preliminary lecture.
+- A student may initially see a problem without yet knowing the method. The worked explanation must then be complete enough for an absent student to reconstruct the lesson.
+- Put the detailed rule, method, warning, and reasoning near the step where it becomes relevant.
+- Keep student-facing prose direct and relatively short.
+- Preserve useful conceptual explanations, but integrate them into worked solutions instead of creating separate sections headed “Procedure,” “Summary,” “Common Mistake,” or similar.
+
+## 8. Worked-solution standards
+
+- Show the intermediate steps students are expected to learn, not only the starting expression and final answer.
+- Keep each algebraic line equivalent to the preceding line unless the prose clearly explains a substitution, comparison, or check.
+- Explain important sign changes, distribution, cancellation, common denominators, factoring decisions, equation-solving operations, and graphing choices in plain language.
+- State restrictions from the original equation before canceling factors or moving variable denominators to the opposite side.
+- Check possible extraneous solutions in the original rational equation.
+- Include both answers when taking an even square root in an equation unless context restricts the result.
+- Do not hide a substantial expected step behind “after simplifying.”
+- Use conventional notation with MathJax-compatible TeX in the HTML. Keep equations as editable text rather than screenshots or plain-text approximations.
+
+## 9. Difficulty and example selection
+
+- Progress from a clear standard case to modest variations.
+- Keep coefficients and constants focused on the intended concept.
+- Include positive and negative cases when sign behavior matters.
+- Use fractional answers when instructionally relevant, but not in every example.
+- Avoid large or unpleasant numbers unless they deliberately motivate a useful strategy, such as simplifying before multiplying.
+- Avoid unnecessary arithmetic, expansion, or factoring that distracts from the topic.
+- Remain within the established TSM 098/099 course scope and schedule.
+
+## 10. Practice material
+
+- Clearly distinguish an assigned practice set from a worked lecture example.
+- Do not place multiple unrelated practice problems in a worked-example section.
+- If a practice problem is incorporated into the lecture-note sequence as an example, give it the same section structure: problem, then a complete worked solution with its natural height reserved when hidden.
+- Unsolved practice sets should be maintained separately or added only when explicitly requested; they should not interrupt the standard worked-problem sequence.
+
+## 11. Cross-listed consistency
+
+- Preserve the established topic sequence for the cross-listed TSM 098/099 course.
+- Keep TSM 098 examples at the established foundational level and TSM 099 examples at the established intermediate-algebra level.
+- Do not use lecture-note edits to redefine test coverage; assessment specifications are maintained separately.
+
+## 12. Editing workflow
+
+For a topic-specific revision, edit the affected HTML topic files and update this specification when the instructional requirements change. Preserve titles, topic numbers, assignment labels, navigation links, and the existing solution-reveal behavior.
+
+For a global change, apply the requirement consistently across all affected HTML files. Avoid unrelated content changes.
+
+Before pushing, review every changed problem and worked solution, check the mathematics, and verify local links and HTML structure. For layout or interaction changes, inspect the affected pages and confirm that revealing or hiding a solution does not move later content. Check that the controls remain outside the problem and solution areas at desktop and mobile widths.
+
+## 13. Quality-control checklist
+
+- All 37 topics remain linked from `index.html`, grouped by unit.
+- Topic titles, assignment labels, overviews, and key definitions are intact.
+- Worked problems and solutions are correctly numbered in document order, restarting with Problem 1 and Solution 1 on each topic.
+- Each example begins with a horizontal rule and contains a complete problem statement and worked solution.
+- Only intentional compare/contrast sections contain multiple problems.
+- Solutions begin hidden while reserving their full natural height.
+- Reveal/hide controls are accessible and outside the areas used for instructor screenshots.
+- Mathematical notation, intermediate steps, restrictions, and final answers are complete and correct.
+- There are no clipped expressions, overlapping controls, missing glyphs, broken links, or placeholder text.
+- Documentation and the contents page refer only to files that remain in the repository.
+
+## 14. Solving equations with numerical or variable denominators
+
+Apply this approach consistently in Topic 28 and Topic 29, in the HTML notes:
 
 - Combine and simplify each side first, using a common denominator within a side when needed. Reduce fractions and cancel common nonzero factors where possible.
 - Once each side is a single simplified expression, move any remaining denominators to multiply the opposite side. When both sides have denominators, move both in the same step. Each denominator multiplies the entire opposite numerator.
