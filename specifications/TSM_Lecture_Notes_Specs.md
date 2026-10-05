@@ -97,7 +97,7 @@ Do not use the compare/contrast exception merely to save pages.
 - Show the intermediate steps students are expected to learn, not only the starting expression and final answer.
 - Keep each algebraic line equivalent to the preceding line unless the prose clearly explains a substitution, comparison, or check.
 - Explain important sign changes, distribution, cancellation, common denominators, factoring decisions, equation-solving operations, and graphing choices in plain language.
-- State restrictions before canceling factors or clearing variable denominators.
+- State restrictions from the original equation before canceling factors or moving variable denominators to the opposite side.
 - Check possible extraneous solutions in the original rational equation.
 - Include both answers when taking an even square root in an equation unless context restricts the result.
 - Do not hide a substantial expected step behind “after simplifying.”
@@ -190,3 +190,15 @@ The interactive rules below replace the fixed ten-blank-line rule for the HTML e
 - Preserve topic titles, **Assigned to** lines, overviews, key definitions, mathematical notation, instructional order, and worked explanations.
 - Keep the HTML design simple, readable, responsive, and suitable for GitHub Pages.
 - Keep the five original Word files, the co-listed schedule, and both specification files in the repository with the HTML edition.
+
+## 17. Solving equations with numerical or variable denominators
+
+Apply this approach consistently in Topic 28 and Topic 29, in both the Word sources and HTML edition:
+
+- Combine and simplify each side first, using a common denominator within a side when needed. Reduce fractions and cancel common nonzero factors where possible.
+- Once each side is a single simplified expression, move any remaining denominators to multiply the opposite side. When both sides have denominators, move both in the same step. Each denominator multiplies the entire opposite numerator.
+- Include examples with a denominator on only one side and with denominators on both sides. Simplification may also remove all denominators before any need to move them.
+- Use fraction notation throughout this instruction. Do not write reciprocal factors with negative exponents and do not use the term “cross-multiply” or its variants.
+- Teach the method through these worked steps rather than instructing students to multiply every term of the original equation by an LCM or LCD. Common denominators are still used to combine fractions within each side.
+- Explain the equality-preserving multiplication where it first becomes relevant. Move a denominator only when it divides the whole side, and retain parentheses around sums and differences.
+- For variable denominators, state restrictions from every original denominator before simplifying. Retain them even after a denominator disappears. Divide out a common factor only when it is nonzero for allowable values, and check every candidate in the original equation.
