@@ -88,16 +88,25 @@ a { color: #175f9e; }
 .solution-panel {
   display: flow-root;
   width: 100%;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 120ms ease;
+  background-color: #ffffff;
 }
 
-.solution-panel.solution-visible {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
+/* Keep all solution text in the rendered document, including MathJax glyphs.
+   Only its foreground color changes; borders such as fraction bars follow it. */
+.solution-panel:not(.solution-visible),
+.solution-panel:not(.solution-visible) * {
+  color: #ffffff !important;
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  text-shadow: none !important;
+  -webkit-text-fill-color: #ffffff !important;
+  forced-color-adjust: none;
+}
+
+.solution-panel:not(.solution-visible)::selection,
+.solution-panel:not(.solution-visible) *::selection {
+  color: #ffffff;
+  background-color: #ffffff;
 }
 
 /* Let MathJax wrap at mathematical breakpoints. Formula containers must not

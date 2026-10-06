@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     solutionLabel.innerHTML = '<strong>Solution ' + number + '</strong>';
     panel.insertBefore(solutionLabel, panel.firstChild);
 
-    // A visible wrapper receives input while the hidden contents retain their
+    // A wrapper receives input while the color-concealed contents retain their
     // natural height, including after math rendering and responsive reflow.
     var area = document.createElement('div');
     area.className = 'solution-area';
@@ -63,10 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function setVisible(value) {
       visible = value;
       panel.classList.toggle('solution-visible', visible);
-      panel.style.visibility = visible ? 'visible' : 'hidden';
-      panel.style.opacity = visible ? '1' : '0';
-      panel.style.pointerEvents = visible ? 'auto' : 'none';
-      panel.setAttribute('aria-hidden', String(!visible));
+      // Conceal only by color: text stays readable to extraction and assistive tools.
+      panel.style.color = visible ? '' : '#ffffff';
       area.setAttribute('aria-expanded', String(visible));
       area.setAttribute('aria-label', (visible ? 'Hide' : 'Show') + ' solution to Problem ' + number);
     }
