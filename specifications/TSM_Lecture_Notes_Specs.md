@@ -57,6 +57,8 @@ More than one problem may share a section only when the problems are intentional
 
 Do not use the compare/contrast exception merely to save space.
 
+Topic 5 must contain five separate worked-example sections: evaluate `sqrt(36)`, evaluate `sqrt(81)`, evaluate `sqrt(-25)` in terms of `i`, evaluate `sqrt(-121)` in terms of `i`, and compare evaluating `sqrt(9)` with solving `x^2 = 9`. Give each section its own complete problem statement and independently toggled solution area. Do not combine these into one large exercise.
+
 ## 7. Examples-first instructional style
 
 - Introduce procedures through problems rather than through a long preliminary lecture.
@@ -75,6 +77,11 @@ Do not use the compare/contrast exception merely to save space.
 - Include both answers when taking an even square root in an equation unless context restricts the result.
 - Do not hide a substantial expected step behind “after simplifying.”
 - Use conventional notation with MathJax-compatible TeX in the HTML. Keep equations as editable text rather than screenshots or plain-text approximations.
+- Formulas must fit the available content width, using mathematical line breaks when needed. Do not give formulas horizontal or vertical scrollbars, crop them, hide overflowing glyphs, or use fixed heights. Fractions, radicals, exponents, and every wrapped line must remain fully visible.
+- Use the shared MathJax 4 configuration with `displayOverflow: 'linebreak'`, inline line breaking enabled, and a line width of `100%` of the formula container. Keep inline math in the paragraph flow, rather than placing the whole expression in an unbreakable inline-block. Leave formula-container overflow visible.
+- Recompute display-equation metrics and line breaks when the content width changes, including phone rotation and switching between desktop and mobile gutters. Preserve readable math sizing and natural solution height; do not shrink every formula to avoid wrapping.
+- Add explicit TeX breakpoints such as `\allowbreak` to long comma-separated mathematical lists when their default breakpoints do not permit wrapping.
+- When a particularly wide indivisible expression cannot fit, rewrite its layout with equivalent, logically grouped mathematical lines. Do not solve overflow by adding a scrollbar or truncating notation.
 
 ## 9. Difficulty and example selection
 
@@ -105,7 +112,7 @@ For a topic-specific revision, edit the affected HTML topic files and update thi
 
 For a global change, apply the requirement consistently across all affected HTML files. Avoid unrelated content changes.
 
-Before pushing, review every changed problem and worked solution, check the mathematics, and verify local links and HTML structure. For layout or interaction changes, inspect the affected pages and confirm that revealing or hiding a solution does not move later content. Check full-width separators and problem statements at desktop and mobile widths; test mouse double-click, touch double-tap, keyboard activation, and rejection of scroll/pinch gestures. Confirm that touch input cannot toggle twice through synthesized mouse events.
+Before pushing, review every changed problem and worked solution, check the mathematics, and verify local links and HTML structure. For layout or interaction changes, inspect the affected pages and confirm that revealing or hiding a solution does not move later content. Check formulas after initial rendering and after resizing at desktop and phone widths: no formula scrollbars or vertical clipping, and long expressions wrap at mathematical breakpoints. Check full-width separators and problem statements at desktop and mobile widths; test mouse double-click, touch double-tap, keyboard activation, and rejection of scroll/pinch gestures. Confirm that touch input cannot toggle twice through synthesized mouse events.
 
 ## 13. Quality-control checklist
 
@@ -118,7 +125,7 @@ Before pushing, review every changed problem and worked solution, check the math
 - Solutions begin hidden while reserving their full natural height.
 - Solution areas toggle with double-click/double-tap and keyboard or assistive-technology activation. No side buttons, visible placeholders, or instructions obstruct the blank work areas. Scrolling and pinch zoom remain available.
 - Mathematical notation, intermediate steps, restrictions, and final answers are complete and correct.
-- There are no clipped expressions, overlapping controls, missing glyphs, broken links, or placeholder text.
+- There are no formula scrollbars, clipped expressions, overlapping controls, missing glyphs, broken links, or placeholder text. Long formulas wrap within the available width, and tall notation is never cropped vertically.
 - Documentation and the contents page refer only to files that remain in the repository.
 
 ## 14. Solving equations with numerical or variable denominators

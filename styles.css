@@ -100,10 +100,11 @@ a { color: #175f9e; }
   pointer-events: auto;
 }
 
-.math.display { display: block; max-width: 100%; overflow-x: auto; }
-.math.inline { display: inline-block; max-width: 100%; overflow-x: auto; vertical-align: middle; }
-
-mjx-container[display="true"] { max-width: 100%; overflow-x: auto; overflow-y: hidden; }
+/* Let MathJax wrap at mathematical breakpoints. Formula containers must not
+   create scrollbars or clip radicals, fractions, exponents, or wrapped lines. */
+.math.display { display: block; max-width: 100%; overflow: visible; }
+.math.inline { display: inline; overflow: visible; }
+mjx-container { overflow: visible; }
 
 @media (max-width: 600px) {
   body { font-size: 16px; }

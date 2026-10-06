@@ -4,15 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Topic 5: Evaluating Square Roots | TSM Lecture Notes</title>
-  <link rel="stylesheet" href="../styles.css?v=20261005-1">
-  <script defer src="../solutions.js?v=20261005-1"></script>
-  <script>
-    window.MathJax = {
-      tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']]},
-      options: {skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']}
-    };
-  </script>
-  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../styles.css?v=20261005-2">
+  <script defer src="../solutions.js?v=20261005-2"></script>
+  <script src="../mathjax-config.js?v=20261005-2"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
 </head>
 <body>
   <main class="lecture-notes">
@@ -36,64 +31,66 @@ itself. Radicand: the expression beneath a radical sign. Perfect square:
 the square of an integer. Imaginary unit: i, defined by i squared equals
 negative 1.</p>
 <section class="worked-example">
-<div class="problem-row">
 <div class="problem-statement">
-<p>Compare and contrast the following problems, then complete each
-one.</p>
-<p>Evaluate <span class="math inline">\(\sqrt{36}\)</span>, <span
-class="math inline">\(\sqrt{81}\)</span>, <span
-class="math inline">\(\sqrt{- 25}\)</span>, and <span
-class="math inline">\(\sqrt{- 121}\)</span>. Then explain why <span
-class="math inline">\(\sqrt{9} = 3\)</span> but the equation <span
-class="math inline">\(x^{2} = 9\)</span> has two solutions.</p>
-</div>
-
+<p>Evaluate <span class="math inline">\(\sqrt{36}\)</span>.</p>
 </div>
 <div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
-<p>The meaning of a square root</p>
-<p>A square root reverses squaring. The principal square root of a
-nonnegative number is the nonnegative number whose square is the
-original number. For example, because <span class="math inline">\(7^{2}
-= 49\)</span>,</p>
-<p><span class="math display">\[\sqrt{49} = 7.\]</span></p>
-<p>The radical symbol <span
-class="math inline">\(\sqrt{\phantom{x}}\)</span> asks for the principal
-square root, so <span class="math inline">\(\sqrt{49}\)</span> means
-<span class="math inline">\(7\)</span>, not <span
-class="math inline">\(\pm 7\)</span>. The symbol <span
-class="math inline">\(\pm\)</span> appears later when we solve an
-equation such as <span class="math inline">\(x^{2} = 49\)</span>,
-because both <span class="math inline">\(7\)</span> and <span
-class="math inline">\(- 7\)</span> make that equation true.</p>
-<p>Perfect-square radicands</p>
-<p>When the number under the radical is a perfect square, evaluate the
-radical by finding the nonnegative number that squares to it.</p>
-<p><span class="math display">\[\sqrt{100} =
-10\quad\quad\text{because}\quad\quad 10^{2} = 100.\]</span></p>
-<p>Useful perfect squares include <span
-class="math inline">\(0,1,4,9,16,25,36,49,64,81,100,121,144\)</span>,
-and <span class="math inline">\(169\)</span>. Learning these values
-makes later work with radicals and the quadratic formula much
-faster.</p>
-<p>Negative radicands and imaginary numbers</p>
-<p>No real number has a negative square. To evaluate a square root with
-a negative radicand, use the imaginary unit <span
-class="math inline">\(i\)</span>, defined by</p>
-<p><span class="math display">\[i = \sqrt{- 1}\quad\quad\text{and
-therefore}\quad\quad i^{2} = - 1.\]</span></p>
-<p>Separate the factor of <span class="math inline">\(- 1\)</span>,
-evaluate the remaining square root, and write <span
-class="math inline">\(i\)</span> after the numerical coefficient.</p>
-<p><span class="math display">\[\sqrt{- 16} = \sqrt{16}\sqrt{- 1} =
-4i.\]</span></p>
-<p>Similarly,</p>
-<p><span class="math display">\[\sqrt{- 64} = 8i.\]</span></p>
-<p>A common error is to write <span class="math inline">\(- 4\)</span>
-for <span class="math inline">\(\sqrt{- 16}\)</span>. That cannot be
-correct because <span class="math inline">\(( - 4)^{2} = 16\)</span>,
-not <span class="math inline">\(- 16\)</span>.</p>
-<p><span class="math display">\[\sqrt{36}=6,\qquad \sqrt{81}=9,\qquad \sqrt{-25}=5i,\qquad \sqrt{-121}=11i.\]</span></p>
-<p>The positive radicands give real principal square roots; the negative radicands give imaginary principal square roots. <span class="math inline">\(\sqrt{9}=3\)</span> asks for one principal root, while <span class="math inline">\(x^2=9\)</span> has the two solutions <span class="math inline">\(x=3\)</span> and <span class="math inline">\(x=-3\)</span>.</p>
+<p>A square root reverses squaring. The principal square root of a nonnegative number is the nonnegative number whose square is the original number.</p>
+<p>Since <span class="math inline">\(6^2=36\)</span>,</p>
+<p class="math display">\[\sqrt{36}=6.\]</p>
+<p>The radical symbol asks for the principal square root, so the answer is <span class="math inline">\(6\)</span>, not <span class="math inline">\(\pm6\)</span>. Although <span class="math inline">\((-6)^2=36\)</span> too, <span class="math inline">\(-6\)</span> is not the principal square root.</p>
+<p>For the same reason, <span class="math inline">\(\sqrt{49}=7\)</span> because <span class="math inline">\(7^2=49\)</span>.</p>
+</div>
+</section>
+
+<section class="worked-example">
+<div class="problem-statement">
+<p>Evaluate <span class="math inline">\(\sqrt{81}\)</span>.</p>
+</div>
+<div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
+<p>When the radicand is a perfect square, find the nonnegative number that squares to it. Since <span class="math inline">\(9^2=81\)</span>,</p>
+<p class="math display">\[\sqrt{81}=9.\]</p>
+<p>Similarly, <span class="math inline">\(\sqrt{100}=10\)</span> because <span class="math inline">\(10^2=100\)</span>.</p>
+<p>Useful perfect squares include <span class="math inline">\(0,\allowbreak 1,\allowbreak 4,\allowbreak 9,\allowbreak 16,\allowbreak 25,\allowbreak 36,\allowbreak 49,\allowbreak 64,\allowbreak 81,\allowbreak 100,\allowbreak 121,\allowbreak 144,\allowbreak 169\)</span>. Learning these values makes later work with radicals and the quadratic formula faster.</p>
+</div>
+</section>
+
+<section class="worked-example">
+<div class="problem-statement">
+<p>Evaluate <span class="math inline">\(\sqrt{-25}\)</span>, writing the answer in terms of <span class="math inline">\(i\)</span>.</p>
+</div>
+<div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
+<p>No real number has a negative square. Use the imaginary unit <span class="math inline">\(i\)</span>, defined by</p>
+<p class="math display">\[i=\sqrt{-1},\qquad i^2=-1.\]</p>
+<p>Separate the factor of <span class="math inline">\(-1\)</span>, evaluate the square root of the positive factor, and write <span class="math inline">\(i\)</span> after the numerical coefficient.</p>
+<p class="math display">\[\sqrt{-25}=\sqrt{25}\sqrt{-1}=5i.\]</p>
+<p>The answer is not <span class="math inline">\(-5\)</span>: <span class="math inline">\((-5)^2=25\)</span>, not <span class="math inline">\(-25\)</span>. Instead, <span class="math inline">\((5i)^2=25i^2=-25\)</span>.</p>
+<p>For the same reason, <span class="math inline">\(\sqrt{-16}=\sqrt{16}\sqrt{-1}=4i\)</span>, not <span class="math inline">\(-4\)</span>.</p>
+</div>
+</section>
+
+<section class="worked-example">
+<div class="problem-statement">
+<p>Evaluate <span class="math inline">\(\sqrt{-121}\)</span>, writing the answer in terms of <span class="math inline">\(i\)</span>.</p>
+</div>
+<div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
+<p>Since <span class="math inline">\(11^2=121\)</span>, the square root of the positive factor is <span class="math inline">\(11\)</span>.</p>
+<p class="math display">\[\sqrt{-121}=\sqrt{121}\sqrt{-1}=11i.\]</p>
+<p>Check by squaring: <span class="math inline">\((11i)^2=121i^2=-121\)</span>. Similarly, <span class="math inline">\(\sqrt{-64}=8i\)</span>.</p>
+<p>Positive radicands give real principal square roots; negative radicands give imaginary principal square roots.</p>
+</div>
+</section>
+
+<section class="worked-example">
+<div class="problem-statement">
+<p>Compare and contrast the following two problems. Evaluate <span class="math inline">\(\sqrt{9}\)</span>, and solve <span class="math inline">\(x^2=9\)</span>. Explain why the number of answers differs.</p>
+</div>
+<div class="solution-panel" data-solution-panel aria-hidden="true" style="visibility: hidden; opacity: 0; pointer-events: none;">
+<p>Evaluating a radical asks for the principal square root, so</p>
+<p class="math display">\[\sqrt{9}=3.\]</p>
+<p>Solving the equation asks for every value whose square is <span class="math inline">\(9\)</span>. Both <span class="math inline">\(3^2=9\)</span> and <span class="math inline">\((-3)^2=9\)</span>, so</p>
+<p class="math display">\[x=3\quad\text{or}\quad x=-3,\qquad\text{equivalently }x=\pm3.\]</p>
+<p>The radical has one principal value; the equation has two solutions. The same distinction explains why <span class="math inline">\(\sqrt{49}=7\)</span> but <span class="math inline">\(x^2=49\)</span> has solutions <span class="math inline">\(x=\pm7\)</span>.</p>
 </div>
 </section>
 
