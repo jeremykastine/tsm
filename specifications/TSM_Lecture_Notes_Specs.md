@@ -38,13 +38,15 @@ Begin each topic with its established title, Assigned to line, brief Overview, a
 - Publish one HTML file for each topic, numbered Topic 1 through Topic 37.
 - Place a simple `index.html` at the repository root and group all topic links by unit as a table of contents.
 - Do not imitate Word pages or insert page breaks in the HTML edition. Let each topic flow continuously in the browser.
-- Begin every worked example with a horizontal rule and a bold **Problem N** label. Number examples in document order and restart at **Problem 1** on every topic page.
+- Use the full browser width for worked examples, with modest text gutters and an edge-to-edge horizontal rule. Do not reserve a side column or impose a narrow maximum width on lecture pages. Begin every worked example with the horizontal rule and a bold **Problem N** label. Number examples in document order and restart at **Problem 1** on every topic page.
 - Write each problem statement as a concise, precise, self-contained task that can be understood and attempted with the solution hidden. State the action (evaluate, simplify, factor, solve, graph, find, or explain) and include every given expression, equation, value, condition, and requested answer form. Wording such as “Consider,” “Start with,” “Begin with,” or “Worked example” does not state a task by itself.
 - Keep answers, intermediate steps, and procedural explanations in the worked solution unless the problem explicitly supplies them as givens. Do not make a problem depend on a previous solution or a hidden continuation; keep successive steps of one problem together. For comparisons, display every expression being compared and say what to evaluate or explain.
 - Place each worked solution directly beneath its complete problem statement in the document flow, and begin it with the corresponding bold **Solution N** label.
 - Hide the solution initially with a method such as `visibility: hidden` that preserves the solution's full natural height. Do not use `display: none`, remove the content from layout, or replace it with a fixed-height gap.
-- Put a real `Click to show solution` button in the right margin beside the beginning of the solution area, aligned with the **Solution N** label rather than the problem statement. The button must remain outside both the problem/snipping column and the blank solution area.
-- Clicking the button must reveal the solution in its reserved space without moving later content. Change the button to `Click to hide solution`; clicking it again must restore the blank area.
+- Do not display a show/hide button. Double-clicking or double-tapping anywhere in the solution area must reveal or hide its contents without moving later content. Keep a visible input wrapper around the hidden solution; hiding the contents must not prevent the blank area from receiving input.
+- Use the native `dblclick` event for a mouse and explicit double-tap detection for touch/stylus input, with a Touch Events fallback when Pointer Events are unavailable. Require two short nearby taps; reject dragging, scrolling, long presses, canceled gestures, and multi-touch gestures. Suppress synthesized mouse double-clicks after touch input so each double-tap toggles exactly once.
+- Apply `touch-action: manipulation` only to the solution area to avoid double-tap zoom conflicts while preserving scrolling and pinch zoom. Do not disable page zoom.
+- Make the solution area keyboard focusable with an accessible action label and expanded state. Enter or Space must toggle it; assistive-technology activation must work too. Show a focus outline only during keyboard navigation. Include one brief gesture/keyboard instruction near the top of each topic, leaving the hidden solution area completely blank.
 - Include the initial hidden state directly in the solution panel's HTML and reinforce it in JavaScript, so a stale or delayed stylesheet cannot expose solutions.
 - Keep the entire problem and naturally sized blank solution region unobstructed for instructor screenshots.
 - Preserve topic titles, **Assigned to** lines, overviews, key definitions, mathematical notation, instructional order, and worked explanations.
@@ -111,7 +113,7 @@ For a topic-specific revision, edit the affected HTML topic files and update thi
 
 For a global change, apply the requirement consistently across all affected HTML files. Avoid unrelated content changes.
 
-Before pushing, review every changed problem and worked solution, check the mathematics, and verify local links and HTML structure. For layout or interaction changes, inspect the affected pages and confirm that revealing or hiding a solution does not move later content. Check that the controls remain outside the problem and solution areas at desktop and mobile widths.
+Before pushing, review every changed problem and worked solution, check the mathematics, and verify local links and HTML structure. For layout or interaction changes, inspect the affected pages and confirm that revealing or hiding a solution does not move later content. Check full-width separators and problem statements at desktop and mobile widths; test mouse double-click, touch double-tap, keyboard activation, and rejection of scroll/pinch gestures. Confirm that touch input cannot toggle twice through synthesized mouse events.
 
 ## 13. Quality-control checklist
 
@@ -122,7 +124,7 @@ Before pushing, review every changed problem and worked solution, check the math
 - With every solution hidden, each problem still states a concise, precise task with all required givens, comparison items, and answer requirements. Revealing the solution shows work and answers for that exact task.
 - Only intentional compare/contrast sections contain multiple problems.
 - Solutions begin hidden while reserving their full natural height.
-- Reveal/hide controls are accessible and outside the areas used for instructor screenshots.
+- Solution areas toggle with double-click/double-tap and keyboard or assistive-technology activation. No side buttons, visible placeholders, or instructions obstruct the blank work areas. Scrolling and pinch zoom remain available.
 - Mathematical notation, intermediate steps, restrictions, and final answers are complete and correct.
 - There are no clipped expressions, overlapping controls, missing glyphs, broken links, or placeholder text.
 - Documentation and the contents page refer only to files that remain in the repository.
