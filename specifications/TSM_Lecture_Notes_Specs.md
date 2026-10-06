@@ -10,21 +10,13 @@ Edit the HTML files in `lessons/` directly. Keep one maintained copy of each top
 
 All 37 topics were compared with the Word documents before removing them. Topics 2–37 matched in content after accounting for formatting. The older Topic 1 examples and multiplication/division fact guidance have been incorporated into the current Topic 1 HTML lesson. The HTML notes now contain all instructional material from the former Word documents. Do not recreate or synchronize a parallel Word edition.
 
-## 2. Topic files and unit boundaries
+## 2. Topic files and sequence
 
-| Unit | Title | Topics |
-|---|---|---:|
-| 1 | Arithmetic | 1–8 |
-| 2 | Expressions | 9–23 |
-| 3 | Solving Equations | 24–29 |
-| 4 | Two-Variable Equations | 30–34 |
-| 5 | Word Problems | 35–37 |
-
-Maintain one HTML file per topic using the established filenames. Do not change topic numbers, instructional order, or unit boundaries unless explicitly instructed.
+Maintain one HTML file per topic using the established filenames, numbered Topic 1 through Topic 37. Keep the established instructional order and topic numbers unless explicitly instructed. Present the topics as one continuous sequence without unit headings or unit labels in the table of contents or on individual topic pages.
 
 ## 3. Terminology and course labels
 
-- Use **Unit 1** through **Unit 5** for the lecture-note collections.
+- Label the lecture-note collection **TSM Lecture Notes**, with individual pages labeled by topic. Do not add unit delineations to the table of contents or topic pages.
 - Assessments are called **tests**, not “unit tests.”
 - Use **TSM 098** and **TSM 099** consistently.
 - Preserve every topic's **Assigned to** line. Do not infer assessment coverage from a topic's course assignment.
@@ -36,7 +28,7 @@ Begin each topic with its established title, Assigned to line, brief Overview, a
 ## 5. Worked examples and browser behavior
 
 - Publish one HTML file for each topic, numbered Topic 1 through Topic 37.
-- Place a simple `index.html` at the repository root and group all topic links by unit as a table of contents.
+- Place a simple `index.html` at the repository root and list all topic links in numerical order as one continuous table of contents.
 - Do not imitate Word pages or insert page breaks in the HTML edition. Let each topic flow continuously in the browser.
 - Use the full browser width for worked examples, with modest text gutters and an edge-to-edge horizontal rule. Do not reserve a side column or impose a narrow maximum width on lecture pages. Begin every worked example with the horizontal rule and a bold **Problem N** label. Number examples in document order and restart at **Problem 1** on every topic page.
 - Write each problem statement as a concise, precise, self-contained task that can be understood and attempted with the solution hidden. State the action (evaluate, simplify, factor, solve, graph, find, or explain) and include every given expression, equation, value, condition, and requested answer form. Wording such as “Consider,” “Start with,” “Begin with,” or “Worked example” does not state a task by itself.
@@ -117,7 +109,7 @@ Before pushing, review every changed problem and worked solution, check the math
 
 ## 13. Quality-control checklist
 
-- All 37 topics remain linked from `index.html`, grouped by unit.
+- All 37 topics remain linked from `index.html` in numerical order, without unit headings or grouping.
 - Topic titles, assignment labels, overviews, and key definitions are intact.
 - Worked problems and solutions are correctly numbered in document order, restarting with Problem 1 and Solution 1 on each topic.
 - Each example begins with a horizontal rule and contains a complete problem statement and worked solution.
