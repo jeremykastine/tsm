@@ -1,3 +1,5 @@
+> **Moved to Teaching.** The active course materials are now in [teaching/tsm](https://github.com/jeremykastine/teaching/tree/main/tsm). Open the [course website](https://jeremykastine.github.io/teaching/tsm/). Make future updates in Teaching; this repository is retained for its original history.
+
 # TSM
 
 Lecture notes and planning documents for the co-listed TSM 098–099 course.
